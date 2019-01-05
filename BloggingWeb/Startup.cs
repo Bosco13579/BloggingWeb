@@ -62,6 +62,7 @@ namespace BloggingWeb
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
+
             app.UseAuthentication();
 
             DbSeeder.SeedDb(context, userManager);

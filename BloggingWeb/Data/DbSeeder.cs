@@ -23,7 +23,42 @@ namespace BloggingWeb.Data
                 Email = "Member1@email.com"
             };
 
+            IdentityUser user2 = new IdentityUser
+            {
+                UserName = "Customer1@email.com",
+                Email = "Customer1@email.com"
+            };
+
+            IdentityUser user3 = new IdentityUser
+            {
+                UserName = "Customer2@email.com",
+                Email = "Customer2@email.com"
+            };
+
+            IdentityUser user4 = new IdentityUser
+            {
+                UserName = "Customer3@email.com",
+                Email = "Customer3@email.com"
+            };
+
+            IdentityUser user5 = new IdentityUser
+            {
+                UserName = "Customer4@email.com",
+                Email = "Customer4@email.com"
+            };
+
+            IdentityUser user6 = new IdentityUser
+            {
+                UserName = "Customer5@email.com",
+                Email = "Customer5@email.com"
+            };
+
             userManager.CreateAsync(user, "Password123!").Wait();
+            userManager.CreateAsync(user2, "Password123!").Wait();
+            userManager.CreateAsync(user3, "Password123!").Wait();
+            userManager.CreateAsync(user4, "Password123!").Wait();
+            userManager.CreateAsync(user5, "Password123!").Wait();
+            userManager.CreateAsync(user6, "Password123!").Wait();
         }
 
         private static void SeedPeople(ApplicationDbContext context)
